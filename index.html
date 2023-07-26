@@ -36,21 +36,5 @@
     <h1>Get fucking doxxed!</h1>
     <h1 id="ip">Loading...</h1>
     <p>Made by 3kh0 for Xytrux</p>
-    <script>
-      function i(n) {
-        var t, e;
-        (t = function (t) {
-          n(t);
-        }),
-          (e = new XMLHttpRequest()).open("GET", "https://ip-checker.claytontdm.repl.co/", !0),
-          (e.onreadystatechange = function () {
-            4 === e.readyState && 200 === e.status && t(e.responseText);
-          }),
-          e.send();
-      }
-      i(function (n) {
-        document.getElementById("ip").innerHTML = n;
-      });
-    </script>
   </body>
 </html>
